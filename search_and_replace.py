@@ -8,8 +8,8 @@ EXAMPLE:
   for all text files in the current directory and all subdirectories.
 
   $ python search_and_replace.py . FOO BAR    ==> Matches ALL files, like *
-  $ python search_and_replace.py . FOO BAR *  ==> Matches ALL files, like *
-  $ python search_and_replace.py . FOO BAR *.txt  ==> Matches
+  $ python search_and_replace.py . FOO BAR "*"  ==> Matches ALL files, like *
+  $ python search_and_replace.py . FOO BAR "*.txt"  ==> Matches
 """
 import os, fnmatch, sys
 import fnmatch
