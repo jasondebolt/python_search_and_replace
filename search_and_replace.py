@@ -56,6 +56,7 @@ def search_and_replace(directory, find, replace, filePattern=None):
             filename.endswith('.jpeg') or
             filename.endswith('.swf') or
             filename.endswith('.ico') or
+            filename.endswith('.DS_Store') or
             filename.endswith('.svg')):
             continue
         with open(filename) as f:
